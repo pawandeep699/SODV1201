@@ -1,0 +1,67 @@
+
+body {
+
+     background-color: rgb(255, 178, 11);
+
+}
+
+h1 {
+
+   text-align: center;
+
+   font-weight: bold;
+
+   color: black;
+
+   font-size: xx-large;
+
+
+}
+
+.coin {
+
+    text-align: center;
+}
+
+li {
+
+    float:left;
+}
+
+li a:hover {
+
+    color: rgb(75, 68, 4);
+}
+
+ul {
+
+    overflow: hidden;
+    padding:0;
+    margin: 0;
+    list-style-type: none;
+    background-color: rgb(153, 83, 3);
+}
+
+li a {
+
+    padding:18px 14px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    display: block ;
+    text-decoration: none;
+}
+
+
+#endPage {
+
+    display:block;
+    padding:18px 14px;
+    font-size: medium;
+    font-weight: bold;
+    text-align: justify;
+    background-color:rgb(153, 83, 3) ;
+    color: white;
+    height: 100px;
+}
+

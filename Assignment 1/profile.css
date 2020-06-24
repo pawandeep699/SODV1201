@@ -1,0 +1,82 @@
+body {
+
+    background-color: aquamarine;
+}
+
+
+h1 {
+
+    text-align: center;
+    font-size: xx-large;
+    font-family: monospace;
+    color: teal;
+}
+
+li {
+
+    float:left;
+}
+
+li a:hover {
+
+    color: rgb(59, 25, 25);
+}
+
+ul {
+
+    overflow: hidden;
+    padding:0;
+    margin: 0;
+    list-style-type: none;
+    background-color: black;
+}
+
+li a {
+    padding:18px 14px;
+    color: gray;
+    font-weight: bold;
+    text-align: center;
+    display: block ;
+    text-decoration: none;
+}
+
+div.picture img {
+
+    height:200px;
+    width: 15%;
+    
+}
+
+div.myName {
+
+    padding: 5px;
+    text-align: justify;
+}
+
+.artHead {
+
+    font-size: x-large;
+    color: teal;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: justify;
+}
+
+.content {
+
+    font-size: large;
+    color: black;
+    text-align: justify;
+
+}
+
+#foot {
+    display:block;
+    padding:18px 14px;
+    font-size: medium;
+    font-weight: bold;
+    text-align: justify;
+    background-color: teal;
+    color: white;
+    height: 100px;
+}

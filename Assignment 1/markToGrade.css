@@ -1,0 +1,84 @@
+body{
+
+    background-color: rgb(10, 68, 194) ;
+}
+
+h1 {
+
+    color: black;
+    font-size: xx-large;
+    font-weight: bold;
+    
+   
+
+}
+
+
+li {
+
+    float:left;
+}
+
+li a:hover {
+
+    background-color: rgb(9, 45, 75);
+}
+
+ul {
+
+    overflow: hidden;
+    padding:0;
+    margin: 0;
+    list-style-type: none;
+    background-color: rgb(9, 216, 243);
+}
+
+li a {
+    padding:18px 14px;
+    color: gray;
+    font-weight: bold;
+    text-align: center;
+    display: block ;
+    text-decoration: none;
+}
+
+.pOne {
+
+    font-size: large;
+    color: rgb(95, 44, 143);
+    font-weight: bold;
+   
+
+}
+
+.came {
+
+    color: rgb(95, 44, 143) ;
+
+    font-weight: bold;
+
+}
+
+#error {
+
+    color: rgb(95, 44, 143);
+
+    font-weight: bold;
+}
+
+.cont {
+
+    text-align:center;
+    background-color: black;
+}
+
+#foot {
+    display:block;
+    padding:18px 14px;
+    font-size: medium;
+    font-weight: bold;
+    text-align: justify;
+    background-color: teal;
+    color: white;
+    height: 100px;
+}
