@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ven - us ">
+	<head>
+
+		
+		<meta charset="utf-8">
+		<meta name= "Pawandeep Singh Grewal" content = "The wheather Website">
+		<title>The Calgary Weather</title>
+		<style>
+
+			h1 , h2 ,h3,h4,h5,h6 {
+                       
+
+					   font-size:xx-large;
+					   text-align: center;
+
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wheatherPro">
+			<h1 id="placeData"></h1>	
+			<h2 id="time"></h2>
+			<h3 id="icon"></h3>
+			<h4 id="description"></h4>
+			<h5 id="cellAndFarr"></h5>
+			<h6 id="wind"></h6>
+			<h6 id="humidity"></h6>
+		</div>
+		<script lang="text/javascript">
+
+		
+			const apiKey = '3138f884a4e4f0b00a0387eb5eeeecf8';   // Api Key from OpenWheather
+
+			function wheatherPro( calgaryId ) {
+
+				fetch('https://api.openweathermap.org/data/2.5/weather?id=' + calgaryId+ '&appid=' + apiKey)  
+			     
+				 //converting Data into json.
+			
+				.then(function(val) { return val.json() }) 
+
+
+				.then(function(num) {
+					displayX(num);          // Display The wheather.
+				})
+				
+				.catch(function() {          // function to find errors.
+				
+				});
+			}
+			function displayX( xam ) {
+
+
+
+				let celcius = Math.round(parseFloat(xam.main.temp)-273.15);
+				let farenheit = Math.round(((parseFloat(xam.main.temp)-273.15)*1.8)+32);
+				let wheatherData = xam.weather[0].description; 
+				let windSpeed = xam.wind.speed; 
+				let wet = xam.main.humidity; 
+				let max = xam.dt;
+				let watch = new Date(max * 1000);
+				
+
+				// assigning Values 
+				document.getElementById('cellAndFarr').innerHTML ='Temperature: '+ celcius + '&deg;C ('+ farenheit +'&deg;F)';
+
+				document.getElementById('description').innerHTML ='Weather Description: ' + wheatherData.toUpperCase();
+
+				document.getElementById('placeData').innerHTML = xam.name;
+
+				document.getElementById('wind').innerHTML ='Wind Speed: '+ windSpeed +' m/s';
+
+				document.getElementById('humidity').innerHTML = 'Humidity: '+ wet +'%';
+
+				document.getElementById('time').innerHTML = 'Local Time: '+ watch ;
+				
+			}
+			window.onload = function() {
+				wheatherPro( 5913490 );
+			}
+		</script>
+	</body>
+</html> 
