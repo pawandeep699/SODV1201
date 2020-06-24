@@ -1,0 +1,40 @@
+body {
+
+    background-color: rgb(8, 179, 179);
+}
+
+#printValue {
+
+    background-color: black;
+    color: cornsilk;
+}
+
+h1 , h2 , h3 {
+
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    color:black;
+}
+
+.set {
+
+    text-align: center;
+    font-size: medium;
+    font-weight: bold;
+}
+
+#clockPartOne {
+
+    text-align: center;
+}
+
+#wrapStuff {
+
+    text-align: center;
+}
+
+.setThem {
+
+    text-align: center;
+}

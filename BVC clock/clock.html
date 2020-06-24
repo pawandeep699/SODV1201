@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+
+<html lang='us - en'>
+
+    <head>
+
+        <title>Final : The Clock </title>
+
+
+        <meta charset='UFT-8' name='Pawandeep Singh Grewal' content="The Digital Clock" >
+
+
+        <link rel="stylesheet" href="clock.css">
+
+    </head>
+
+
+    <body>
+
+
+        
+            <h1> Current Time in Calgary, Alberta, Canada</h1>
+
+            <h1 id='printValue'></h1>
+        </div>
+
+        <div id='clockPartOne'>
+
+
+            <h1>Set Your Alarm Time :</h1>
+            <label>
+            <P>Hours : <select id='clockHour' ></select></P>  <!--setup Hour Window-->
+            </label>
+
+
+            <label>
+            <p>Minutes :<select id='clockMinute' ></select></p> <!--Setup minutes Window-->
+            </label>
+                
+            <label>
+            <p>Seconds :<select id='clockSecond' ></select></p> <!--Setup Seconds Window-->
+            </label>
+
+            <label>     
+            <select id="dayNight">
+            <option value="am">am</option>        <!-- am/pm options-->
+            <option value="pm">pm</option>
+            </select>
+            </label><br><br>
+
+
+        <div id='wrapStuff'>
+          
+                <input type = "Button" id ="AlarmSetH"  onClick='setAlarm()' value = "Set Alarm" >  
+                
+                
+                                                                                                       <!-- Buttons to set alarm or clear it-->
+            
+
+                <input type = "Button"  id ='AlarmSetK' onClick='clearAlarm()' value = "Clear Alarm">
+
+        </div>
+
+     <div class = "setThem">
+    <h2>The Stopwatch : </h2>
+
+        <input type="button" id ="stopOne" onClick="stopwatch.startPeriod()" value = "Start"> 
+
+        <input type= "button" id = "StopTwo" onClick="stopwatch.frezzePeriod()" value = "Stop">        <!--StopWatch Buttons-->
+
+        <input type = "button" id = "stopThree" onClick="stopwatch.prevPeriod()" value = "Restart">
+
+    <div class="partTwo"></div>
+                                     <!--Display Stop Watch -->
+    <div class="outCome"></div>
+     
+
+    </div>
+
+    <h3>The CountdownWatch : </h3>
+
+    <div class = "setThem">
+                                                                                              <!--Display CountdownWatch-->
+    <p id="dateWatch"> </p> 
+
+    </div>
+     <script src='clock.js'></script>
+ 
+
+</body>
+</html>
